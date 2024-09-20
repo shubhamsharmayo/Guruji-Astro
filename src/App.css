@@ -1,0 +1,30 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+img{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+}
+.submittion-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid white; */
+  height: 97vh;
+}
+@media screen and (max-width:715px){
+  .submittion-container{
+      font-size:14px;
+      /* border: 1px solid white; */
+  }
+ 
+}

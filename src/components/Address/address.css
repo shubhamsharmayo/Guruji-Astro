@@ -1,0 +1,109 @@
+/* Form container */
+.address-form {
+    width: 25%;
+    margin: 50px auto;
+    padding: 30px 50px 30px 30px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAddress 0.7s ease-in-out forwards;
+  }
+  
+  /* Form group styling */
+  .address-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields */
+  .address-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    background-color: #000000;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.5s ease;
+  }
+  
+  .address-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    outline: none;
+    border-radius: 8px;
+    transition: border-radius 0.5s ease;
+  }
+  
+  /* Error message */
+  .address-error {
+    color: #ff4d4f;
+    font-size: 0.85rem;
+    margin-top: 5px;
+  }
+  
+  /* Button container */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 105%;
+  }
+  
+  /* Back button */
+  .address-back-button {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .address-back-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+  }
+  
+  /* Next button */
+  .address-next-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .address-next-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  .address-input:-webkit-autofill {
+    background-color: #000000 !important; /* Forces consistent background color */
+    -webkit-box-shadow: 0 0 0 1000px #000000 inset !important; /* Removes autofill styling */
+    transition: background-color 0s ease-in-out 1000s; /* Smooth autofill transition */
+  }
+
+  /* Fade-in animation */
+  @keyframes fadeInAddress {
+    0% {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media screen and (max-width:715px){
+    .address-form{
+        width: 80%;
+        
+    }
+   
+  }

@@ -1,0 +1,105 @@
+/* Form container styling */
+.form-container {
+    /* max-width: 400px; */
+    width: 30%;
+    margin: 50px auto  ;
+    padding: 30px 50px 30px 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  
+  /* Form group wrapper */
+  .form-group {
+    margin-bottom: 30px;
+  }
+  
+  /* Form label styling */
+  .form-label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: start;
+  }
+  
+  /* Form input styling */
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    background-color: black;
+    transition: border 0.3s ease, box-shadow 0.3s ease, border-radius 0.5s ease;
+  }
+  .form-input:-webkit-autofill {
+    background-color: #000000 !important; /* Forces consistent background color */
+    -webkit-box-shadow: 0 0 0 1000px #000000 inset !important; /* Removes autofill styling */
+    transition: background-color 0s ease-in-out 1000s; /* Smooth autofill transition */
+  }
+  
+  .form-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    background-color: black;
+    outline: none;
+    border-radius: 8px;
+    transition: border-radius 0.5s ease;
+    
+  }
+  
+  /* Error message styling */
+  .form-error {
+    color: #d9534f;
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }
+  
+  /* Form button styling */
+  .form-button {
+    background-color: #019231;
+    color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    width: 105%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .form-button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Animation for form fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media screen and (max-width:715px){
+    .form-container{
+        width: 80%;
+        margin-top: 20px;
+    }
+  }

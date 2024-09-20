@@ -1,0 +1,104 @@
+/* Container for the confirmation component */
+.confirmation-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f4f6f8;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInConfirmation 0.6s ease-in-out forwards;
+  }
+  
+  /* Title styling */
+  .confirmation-title {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Info styling */
+  .confirmation-info {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    animation: slideInInfo 0.5s ease-in-out forwards;
+  }
+  
+  /* Buttons container */
+  .confirmation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Back button styling */
+  .confirmation-back-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .confirmation-back-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+  }
+  
+  /* Submit button styling */
+  .confirmation-submit-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .confirmation-submit-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  /* Loader inside submit button */
+  .confirmation-submit-button .loader {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Fade-in animation for the container */
+  @keyframes fadeInConfirmation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Slide-in animation for the info */
+  @keyframes slideInInfo {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
